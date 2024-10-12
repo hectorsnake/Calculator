@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { CalcComponent } from './calc.component';
 
@@ -8,7 +10,11 @@ describe('CalcComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CalcComponent]
+      imports: [
+        CommonModule,
+        FormsModule,
+      ],
+      declarations: [CalcComponent]
     })
     .compileComponents();
     

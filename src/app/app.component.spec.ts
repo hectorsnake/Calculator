@@ -1,10 +1,27 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+
+// Create a dummy component to replace CalcComponent in tests
+@Component({
+  selector: 'app-calc',
+  template: ''  // This can be empty since we are just mocking it
+})
+class MockCalcComponent {}
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent],
+      imports: [
+        BrowserModule,
+        RouterOutlet
+      ],
+      declarations: [
+        AppComponent,
+        MockCalcComponent // Use the mock component
+      ],
     }).compileComponents();
   });
 
