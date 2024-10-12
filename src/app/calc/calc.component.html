@@ -1,0 +1,31 @@
+<div  class="container">
+    <h1>Calculator</h1>
+  
+    <div class="main-container">
+      <div>
+        <div class="form-group">
+          <label for="number1">Number 1</label>
+          <input id="number1" type="number" [(ngModel)]="number1" class="form-control" required/>  
+        </div>
+  
+        
+        <span >+</span>
+  
+        <div class="form-group">
+          <label for="number2">Number 2</label>
+          <input id="number2" type="number" [(ngModel)]="number2" class="form-control" required/>  
+        </div>
+  
+        <span> = </span>
+        <div class="form-group">
+          <label for="result">Result</label>
+          <span id="result" class="form-control"> {{result}} </span>
+        </div>
+  
+      </div>
+      
+      <div class="form-group">
+        <button type="button" class="btn btn-success" (click)="calculate()">Success</button>
+      </div>
+    </div>
+  </div>
