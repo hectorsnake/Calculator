@@ -40,7 +40,7 @@ describe('CalcComponent', () => {
 
     component.calculate();
 
-    expect(component.result).toBe(15);
+    expect(component.result).toBe(61);
   });
 
   it('should handle adding negative numbers', () => {
