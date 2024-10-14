@@ -23,24 +23,24 @@ describe('CalcComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('Should create', () => {
     expect(component).toBeTruthy();
   });
 
 
   it('should initialize numbers and result to null', () => {
-    expect(component.number2).toBeNull();
     expect(component.number1).toBeNull();
+    expect(component.number2).toBeNull();
     expect(component.result).toBeNull();
   });
 
   it('should calculate the sum of number1 and number2', () => {
-    component.number1 = 51;
-    component.number2 = 101;
+    component.number1 = 5;
+    component.number2 = 10;
 
     component.calculate();
 
-    expect(component.result).toBe(152);
+    expect(component.result).toBe(15);
   });
 
   it('should handle adding negative numbers', () => {
