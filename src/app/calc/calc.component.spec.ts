@@ -31,6 +31,7 @@ describe('CalcComponent', () => {
   it('should initialize numbers and result to null', () => {
     expect(component.number1).toBeNull();
     expect(component.number2).toBeNull();
+    expect(component.number2).toBeNull();
     expect(component.result).toBeNull();
   });
 
