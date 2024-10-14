@@ -35,7 +35,7 @@ describe('CalcComponent', () => {
   });
 
   it('should calculate the sum of number1 and number2', () => {
-    component.number1 = 5;
+    component.number1 = 51;
     component.number2 = 10;
 
     component.calculate();
